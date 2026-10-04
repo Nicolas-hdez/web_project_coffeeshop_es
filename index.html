@@ -56,12 +56,102 @@
       <p class="info-text">Avenida del Éxito 200, Ciudad Triple Peaks</p>
     </header>
 
-    <main id="reservar-una-mesa" class="content">
-      <p>reservas</p>
+    <main id="reservar-una-mesa" class="reservation">
+      <h2 class="reservation-title">Reservar una mesa</h2>
+
+      <form class="reservation-form" action="#" method="post">
+        <fieldset class="reservation-fieldset">
+          <label class="form-label" for="name">Nombre *</label>
+          <input
+            class="form-input"
+            type="text"
+            id="name"
+            name="name"
+            minlength="1"
+            maxlength="30"
+            required
+          />
+          <label class="form-label" for="guests">Número de comensales *</label>
+          <input
+            class="form-input"
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="8"
+            placeholder="1-8"
+            required
+          />
+          <label class="form-label" for="datetime">Fecha y hora *</label>
+          <input
+            class="form-input"
+            type="datetime-local"
+            id="datetime"
+            name="datetime"
+            required
+          />
+          <label class="form-label" for="email">Tu correo electrónico *</label>
+          <input
+            class="form-input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@email.com"
+            required
+          />
+
+          <button class="reservation-button" type="submit">
+            Reservar una mesa
+          </button>
+
+          <label class="checkbox-label" for="terms">
+            <input
+              class="form-checkbox"
+              type="checkbox"
+              id="terms"
+              name="terms"
+              required
+            />Acepto los términos y condiciones
+          </label>
+        </fieldset>
+      </form>
     </main>
 
     <footer id="contactos" class="footer">
-      <p>contactos</p>
+      <div class="footer-circle"></div>
+
+      <img
+        class="footer-logo"
+        src="images/logo_coffeeshop_light.svg"
+        alt="logo"
+      />
+
+      <div class="footer-social">
+        <p class="footer-social-title">Redes sociales</p>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              <img
+                class="footer-social-icon"
+                src="images/facebook_white.svg"
+                alt="Facebook"
+              />
+              Facebook
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-link" href="#">
+              <img
+                class="footer-social-icon"
+                src="images/instagram_white.svg"
+                alt="Instagram"
+              />
+              Instagram
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer-copyright">© 2026 Nicolas Hernandez</p>
     </footer>
   </body>
 </html>
